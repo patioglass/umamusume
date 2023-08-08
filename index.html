@@ -3,52 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>マチカネフクキタル占い</title>
+    <meta property="og:url" content="https://patiopatimon.com/umamusume/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="マチカネミコキタル占い" />
+    <meta property="og:description" content=" C102で頒布したステッカーで遊べる占いWebページ「マチカネミコキタル占い」" />
+    <meta property="og:site_name" content="マチカネミコキタル占い" />
+    <meta property="og:image" content="./happy_Matikanefukukitaru/result_hukukitaru.png" />
+
+    <title>マチカネミコキタル占い</title>
     <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
-    <style>
-        body {
-            margin: 0 auto;
-            text-align: center;
-            background-color: brown;
-        }
-        .message {
-            color: white;
-            padding: 26px;
-            font-family: "M PLUS 1p";
-        }
-        .message h1{
-            font-family: "Nico Moji";
-        }
-        .img__main {
-            width: 500px;
-        }
-        .button__omikuji {
-            margin: 0 auto;
-            width: 300px;
-            padding: 20px;
-            border: white 1px solid;
-            border-radius: 10px;
-            cursor: pointer;
-            color: white;
-        }
-        .button__omikuji:hover {
-            background: rgba(255, 255, 255, 0.7);
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="./index.css" rel="stylesheet">
+
+    <script src="./index.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="message">
-            <h1>マチカネミコキタルです！</h1>
-            <p>シラオキ様からのありがた～～いくじ引きを提供する予定なのですが、</p>
-            <p>まだ準備中です・・・！すいません！すぐにでも引けるようにしますので</p>
-            <p>なにとぞお待ちを・・・・・・・・・・・・・・・・・・・・・・・</p>
+    <div class="modal animate__animated animate__fadeInDown">
+        <img class="animate__faster" src="./happy_Matikanefukukitaru/result_hukukitaru_1.png">
+    </div>
+    <div class="animate__animated animate__fadeInDown">
+        <div class="wrapper">
+            <div class="message-flame">
+                <div class="message">
+                    <h1>マチカネミコキタルです!!</h1>
+                    <p>シラオキ様からのありがた～～いくじ引きを提供中です!!</p>
+                    <p>無料ですので是非是非一度占ってみてはいかかでしょうか!!!!!</p>
+                    <p>(※占い結果は20種類あります)</p>
+                </div>
+            </div>
+            <div class="img__main">
+                <img class="kuji-init" src="./happy_Matikanefukukitaru/hukukitaru.png">
+            </div>
         </div>
-        <img class="img__main" src="./happy_Matikanefukukitaru/hukukitaru.png">
+        <br>
         <div class="button__omikuji">
-            おみくじを引く<br>※まだ引けないんです!!
+            おみくじを引く
         </div>
+
+        <a
+            class="button__share-tweet"
+            href=""
+            target="_blank"
+        >
+            Twitterで共有する
+        </a>
+        <div class="author">製作者 → Twitter/X: <a href="https://twitter.com/patioglass" target="_blank">@patioglass</a></div>
     </div>
 </body>
 </html>

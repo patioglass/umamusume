@@ -1,0 +1,123 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: brown;
+}
+
+a {
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.message {
+    color: #444;
+    width: 300px;
+    padding: 26px;
+    font-family: "M PLUS 1p";
+}
+
+.message h1{
+    font-family: "Nico Moji";
+}
+
+.img__main {
+    height: 400px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.kuji-init {
+    width: 300px;
+    margin-top: 50px;
+    text-align: center;
+    bottom: 0;
+}
+
+.kuji-result {
+    width: 150px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 24%;
+    left: 0;
+}
+
+.button__omikuji {
+    position: relative;
+    z-index: 1000;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 20px;
+    border: white 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.button__omikuji:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.message-flame {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 90%;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.message-flame:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid rgba(255, 255, 255, 0.9);
+}
+
+.message-flame div {
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 10000;
+}
+
+.modal img {
+    height: 100vh;
+    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+    --animate-repeat: 16;
+}
+
+.button__share-tweet {
+    display: none;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
