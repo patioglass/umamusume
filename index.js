@@ -29,9 +29,14 @@ window.onload = () => {
             document.querySelector(".modal").style.display = "block";
             // cssに記載されてるアニメーションが終わり次第結果表示
             setTimeout(() => {
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                });
+
                 document.querySelector(".modal").style.display = "none";
                 const num = getRandomInt(KUJI_NUM) + 1;
-                console.log(num);
                 document.querySelector(".img__main img").src = `./img/kuji/${num}.webp`;
                 document.querySelector(".img__main img").classList.add("kuji-result");
                 document.querySelector(".wrapper").classList.add("animate__animated", "animate__bounceIn");
