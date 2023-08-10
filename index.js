@@ -21,7 +21,7 @@ const KUJI_DETAIL = {
     19: "ダイナミック超吉",
     20: "逆に吉",
 }
-const BASE_TWITTER_SHARE_LINK = "http://twitter.com/share?url=https://patiopatimon.com/umamusume/&hashtags=マチカネミコキタル占い&text=";
+const BASE_TWITTER_SHARE_LINK = "https://twitter.com/intent/tweet?url=https://patiopatimon.com/umamusume/&hashtags=マチカネミコキタル占い&text=";
 
 window.onload = () => {
     document.querySelectorAll(".button__omikuji, .button__omikuji-retly").forEach(dom => {
