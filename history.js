@@ -11,7 +11,7 @@ window.onload = () => {
             const img = document.createElement('img');
             img.className = "img__history-kuji";
 
-            if (historyArray.length > 0 && historyArray.includes(num)) {
+            if (historyArray && historyArray.includes(num)) {
                 img.src = `./img/kuji/${num}.webp`; // 画像パス
             } else {
                 img.src = `./img/unknown.png`;
