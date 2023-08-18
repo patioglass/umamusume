@@ -42,15 +42,32 @@ a {
     position: absolute;
     margin: auto;
     right: 0;
-    bottom: 26%;
+    bottom: 34%;
     left: 0;
+}
+
+.button__history {
+    position: relative;
+    top: 20px;
+    z-index: 1000;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 20px;
+    border: white 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.button__history:hover {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .button__omikuji {
     position: relative;
     z-index: 1000;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     width: 300px;
     padding: 20px;
     border: white 1px solid;
@@ -119,4 +136,18 @@ a {
     padding: 10px;
     border: 1px solid white;
     border-radius: 10px;
+}
+
+.kuji__history {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+.img__history-kuji {
+    width: 60px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 1px 0px 4px;
+    background: rgba(0, 0, 0, 0.2);
 }
