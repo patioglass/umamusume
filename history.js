@@ -7,7 +7,7 @@ window.onload = () => {
         const historyArray = JSON.parse(historyJson);
         const show_hisotry = document.querySelector(".kuji__history");
 
-        for(let num = 0; num <= KUJI_NUM; num++) {
+        for(let num = 1; num <= KUJI_NUM; num++) {
             const img = document.createElement('img');
             img.className = "img__history-kuji";
 
