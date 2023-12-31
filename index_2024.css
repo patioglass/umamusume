@@ -1,7 +1,10 @@
 body {
     margin: 0 auto;
     text-align: center;
-    background-color: brown;
+    background:url(./happy_Matikanefukukitaru/2024_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 a {
@@ -16,7 +19,7 @@ a {
 
 .message {
     color: #444;
-    width: 300px;
+    width: 350px;
     padding: 26px;
     font-family: "M PLUS 1p";
 }
@@ -42,8 +45,18 @@ a {
     position: absolute;
     margin: auto;
     right: 0;
-    bottom: 52%;
+    bottom: 55%;
     left: 0;
+}
+
+.kuji-result-text {
+    margin: auto;
+    width: 200px;
+    right: 55px;
+    overflow-wrap: break-word;
+    bottom: 36%;
+    left: 0;
+    position: absolute;
 }
 
 .button__history {
@@ -54,45 +67,31 @@ a {
     margin-bottom: 15px;
     width: 300px;
     padding: 20px;
-    border: white 1px solid;
+    border: #444 1px solid;
     border-radius: 10px;
+    background: white;
     cursor: pointer;
-    color: white;
+    color: #444;
 }
 .button__history:hover {
     background: rgba(255, 255, 255, 0.7);
 }
 
-.button__2024omikuji {
-    display: inline-block;
-    position: relative;
-    z-index: 1000;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 300px;
-    padding: 20px;
-    border: white 1px solid;
-    background-color: rgb(218, 123, 0);
-    border-radius: 10px;
-    cursor: pointer;
-    color: #ffffff;
-}
-
-.button__2024omikuji:hover {
-    background: rgba(255, 255, 255, 0.7);
-}
-
 .button__omikuji {
+    
+    font-family: "Yusei Magic";
     position: relative;
     z-index: 1000;
     margin: 0 auto;
     margin-bottom: 30px;
     width: 300px;
     padding: 20px;
-    border: white 1px solid;
+    border: #444 1px solid;
     border-radius: 10px;
+    background: rgb(255,250,107);
+    background: radial-gradient(circle, rgba(255,250,107,1) 0%, rgba(255,137,43,1) 100%);
     cursor: pointer;
-    color: white;
+    color: black;
 }
 
 .button__omikuji:hover {
@@ -141,7 +140,7 @@ a {
 
 .modal img {
     height: 100vh;
-    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+    animation: flipInY; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1.5s; /* don't forget to set a duration! */
     --animate-repeat: 16;
 }
@@ -155,6 +154,8 @@ a {
     padding: 10px;
     border: 1px solid white;
     border-radius: 10px;
+    background-color: white;
+    color: #444;
 }
 
 .kuji__history {
