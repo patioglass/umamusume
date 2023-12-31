@@ -78,7 +78,6 @@ window.onload = () => {
                 const resultText = document.querySelector(".kuji-result-text");
                 resultText.textContent = `${KUJI_DETAIL[num]}`;
                 document.querySelector(".img__main img").classList.add("kuji-result");
-                document.querySelector(".wrapper").classList.add("animate__animated", "animate__bounceIn");
                 document.querySelector(".wrapper").style.backgroundImage = "url('./happy_Matikanefukukitaru/result_2024_hukukitaru_1.png')";
                 document.querySelector(".button__share-tweet").style.display = "block";
                 document.querySelector(".button__share-tweet").href = `${BASE_TWITTER_SHARE_LINK}占い結果は......「${KUJI_DETAIL_SUMMARY[num]}」でした!!%0a%0a${KUJI_DETAIL[num]}%0a`
