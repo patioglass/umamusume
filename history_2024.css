@@ -1,0 +1,194 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: brown;
+}
+
+.center {
+    margin: 0 auto;
+    min-width: 460px;
+    width: 60%;
+    background-color: white;
+}
+
+a {
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.message {
+    color: #444;
+    width: 350px;
+    padding: 26px;
+    font-family: "M PLUS 1p";
+}
+
+.message h1{
+    font-family: "Nico Moji";
+}
+
+.img__main {
+    height: 340px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.kuji-init {
+    width: 300px;
+    text-align: center;
+    bottom: 0;
+}
+
+.kuji-result {
+    width: 120px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 55%;
+    left: 0;
+}
+
+.kuji-result-text {
+    margin: auto;
+    width: 200px;
+    right: 55px;
+    overflow-wrap: break-word;
+    bottom: 36%;
+    left: 0;
+    position: absolute;
+}
+
+.button__history {
+    position: relative;
+    top: 20px;
+    z-index: 1000;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 20px;
+    border: #444 1px solid;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    color: #444;
+}
+.button__history:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.button__omikuji {
+    
+    font-family: "Yusei Magic";
+    position: relative;
+    z-index: 1000;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 300px;
+    padding: 20px;
+    border: #444 1px solid;
+    border-radius: 10px;
+    background: rgb(255,250,107);
+    background: radial-gradient(circle, rgba(255,250,107,1) 0%, rgba(255,137,43,1) 100%);
+    cursor: pointer;
+    color: black;
+}
+
+.button__omikuji:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.message-flame {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 90%;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.message-flame:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid rgba(255, 255, 255, 0.9);
+}
+
+.message-flame div {
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 10000;
+}
+
+.modal img {
+    height: 100vh;
+    animation: flipInY; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+    --animate-repeat: 16;
+}
+
+.button__share-tweet {
+    display: none;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color: #444;
+}
+
+.kuji__history {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.img__history-kuji {
+    width: 60px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 20px 0px 10px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.li__history-kuji-2024 {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: #fff8e8;
+    border-left: solid 10px #ffc06e;
+}
+
+.span__history-kuji-2024 {
+    display: inline-block;
+    width: 72%;
+}
