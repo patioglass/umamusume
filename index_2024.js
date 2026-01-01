@@ -57,6 +57,8 @@ const LOCALSTORAGE_KEY = "mikokitaru_result_2024";
 const BASE_TWITTER_SHARE_LINK = "https://twitter.com/intent/tweet?url=https://patiopatimon.com/umamusume/index_2024.html&hashtags=マチカネミコキタル占い,新春マチカネミコキタル&text=";
 
 window.onload = () => {
+    const date = new Date();
+    document.querySelector(".currentYear").textContent = date.getFullYear();
     document.querySelectorAll(".button__omikuji, .button__omikuji-retly").forEach(dom => {
         dom.addEventListener("click", () => {
             document.querySelector(".modal").style.display = "block";

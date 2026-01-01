@@ -55,6 +55,9 @@ const LOCALSTORAGE_KEY = "mikokitaru_result";
 const BASE_TWITTER_SHARE_LINK = "https://twitter.com/intent/tweet?url=https://patiopatimon.com/umamusume/&hashtags=マチカネミコキタル占い&text=";
 
 window.onload = () => {
+    // 新年の年数追加
+    const date = new Date();
+    document.querySelector(".currentYear").textContent = date.getFullYear();
     document.querySelectorAll(".button__omikuji, .button__omikuji-retly").forEach(dom => {
         dom.addEventListener("click", () => {
             document.querySelector(".modal").style.display = "block";
